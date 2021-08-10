@@ -1,11 +1,88 @@
-body
-{
-    color: white;
-    background-color: #090909;
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap";
+
+:root {
+    --color-crimson: crimson;
+    --color-lightgrey: lightgrey;
+    --color-background: #090909;
+    --color-lightpink: lightpink;
 }
 
-.menu
-{
-    color: white;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    color: var(--color-lightgrey);
+    background-color: var(--color-background);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.menu {
     background-color: black;
+    padding: 8px;
+    border: var(--color-crimson);
+    border-style: solid;
+    text-align: center;
+}
+
+header {
+    margin: auto;
+}
+
+.menu a {
+    color: var(--color-lightpink);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 16px;
+
+    /*padding: 0 5px;*/
+}
+
+.menu a:hover {
+    color: var(--color-crimson);
+    transition-duration: 500ms;
+}
+
+#wrapper {
+    text-align: center;
+    padding: 32px;
+}
+
+#wrapper img {
+    border-radius: 50%;
+    border: 5px solid var(--color-crimson);
+    height: 300px;
+}
+
+#wrapper h1 {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+#wrapper h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#wrapper p {
+    max-width: 500px;
+    margin: 16px auto;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+#wrapper a {
+    color: var(--color-crimson);
+    text-decoration: none;
+}
+
+#menu-footer a {
+    border-bottom: 1px solid var(--color-crimson);
 }
